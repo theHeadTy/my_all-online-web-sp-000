@@ -1,5 +1,5 @@
 require_relative "../lib/my_all.rb"
 
-my_all?([1, 2, 3]) { |i| return i < 3 }
+my_all?([1, 2, 3]) { |i| break false if i < 3 }
 
-my_all?([1, 2, 3]) { |i| return i < 4 }
+my_all?([1, 2, 3]) { |i| break false if i < 4 }
