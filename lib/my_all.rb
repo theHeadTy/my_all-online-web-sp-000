@@ -2,8 +2,8 @@ require 'pry'
 
 def my_all?(array)
   new = []
-  (0..array.length - 1).step do |index|
-    new << yield(array[index])
-  end
+  array.each { |val|
+    new << yield(val)
+  }
   new
 end
