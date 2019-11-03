@@ -5,5 +5,5 @@ def my_all?(array)
   array.each { |val|
     new << yield(val)
   }
-  new
+  !new.include?(false) ? true : false
 end
