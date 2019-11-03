@@ -5,5 +5,4 @@ def my_all?(array)
   (0..array.length - 1).step do |index|
     yield(index)
   end
-  new
 end
